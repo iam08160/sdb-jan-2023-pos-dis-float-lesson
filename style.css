@@ -1,0 +1,98 @@
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vw;
+    /* increase height to 175 to see scroll effects */
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* caused absolute container to position inside parent container */
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    border: 2px solid red;
+    background-color: red;
+    right: 25px;
+    /* No effect on static */
+}
+
+.child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    /* moves 15 px from static postion */
+}
+
+.child3 {
+    border: 2px solid green;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Removed from natural flow of the document */
+    /* moves to upper lef corner of viewport (body */
+    /* caused by parent container being static  */
+}
+
+.child4 {
+    border: 2px solid teal;
+    background-color: teal;
+    position: fixed
+}
+
+.child5 {
+    border: 2px solid grey;
+    background-color: grey;
+    position: sticky;
+    top: 0px;
+}
+
+.block-container{
+    border: 2px solid black;
+    margin: 5px;
+    display: inline;
+    
+}
+
+.inline-element {
+    margin: 5px;
+    display: block;
+}
+
+.inline-block{
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    width: 125px;
+    
+}
+
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 20vw;
+
+}
+
+.float-box {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+
+    float: right;
+    
+}
+/* Position Property
+
+Static
+defauult
+*/
